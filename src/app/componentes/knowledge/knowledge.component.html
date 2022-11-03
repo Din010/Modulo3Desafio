@@ -1,0 +1,66 @@
+<div class="card mat-card">
+    <div class="card-titles">
+        <h2>Experiencias</h2>
+        <div class="btn-add">
+            <a href="#" class="btn-right">
+                <i class="fa fa-plus"></i>
+            </a>
+        </div>
+    </div>
+    <div class="experiencias">
+        <ul class="items-list">
+            <li *ngFor="let experience of experienceList">
+                <a [href]="experience.url" target="_blank"><img class="experiencias-img" [src]="experience.img"></a>
+                <div class="experiencias-data">
+                    <h3>{{experience.position}} en {{experience.company}}</h3>
+                    <div class="btn-edit">
+                        <a href="#" class="btn-left">
+                            <i class="fa fa-pen"></i>
+                        </a>
+                    </div>
+                    <div class="btn-del">
+                        <a href="#" class="btn-right">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p class="experiencias-text">{{experience.mode}}</p>
+                    <p class="experiencias-info"><b><time>{{experience.start}}</time> - <time>{{experience.end}}</time></b></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="card-titles">
+        <h2>Estudios</h2>
+        <div class="btn-add">
+            <a href="#" class="btn-right">
+                <i class="fa fa-plus"></i>
+            </a>
+        </div>
+    </div>
+    <div class="estudios">
+        <ul class="items-list">
+            <li *ngFor="let educacion of educacionList">
+                <a [href]="educacion.url" target="_blank"><img class="estudios-img" [src]="educacion.img"></a>
+                <div class="estudios-data">
+                    <h3>{{educacion.school}}</h3>
+                    <div class="btn-edit">
+                        <a href="#" class="btn-left">
+                            <i class="fa fa-pen"></i>
+                        </a>
+                    </div>
+                    <div class="btn-del">
+                        <a href="#" class="btn-right">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p class="estudios-text">{{educacion.title}} {{educacion.career}}</p>
+                    <p class="estudios-info"><b><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></b></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

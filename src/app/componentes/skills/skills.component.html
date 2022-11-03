@@ -1,0 +1,32 @@
+<div class="card mat-card">
+    <div class="card-titles">
+        <h2>Hard Skills & Soft Skills</h2>
+        <div class="btn-add">
+            <a href="#" class="btn-right">
+                <i class="fa fa-plus"></i>
+            </a>
+        </div>
+    </div>
+    <div class="skills-div">
+        <div class="skill">
+            <ul class="items-list">
+                <li *ngFor="let skills of skillsList">
+                    <p><b>{{skills.skill}}</b></p>
+                    <div class="btn-edit">
+                        <a href="#" class="btn-left">
+                            <i class="fa fa-pen"></i>
+                        </a>
+                    </div>
+                    <div class="btn-del">
+                        <a href="#" class="btn-right">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" [style]="skills.value"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

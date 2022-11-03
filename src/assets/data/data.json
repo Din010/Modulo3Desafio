@@ -1,0 +1,44 @@
+{
+    "name": "Dino Macchi",
+    "backImage": "https://images4.alphacoders.com/936/936378.jpg",
+    "image": "https://i.imgur.com/7171gJO.png",
+    "position": "Informatico independiente",
+    "company": {
+        "name": "independiente",
+        "img": null,
+        "url": null
+    },
+    "school": {
+        "name": null,
+        "img": null,
+        "url": null
+    },
+    "ubication": "Buenos Aires (Argentina)",
+    "about": "Tecnico electromecanico e informatico argentino.",
+    "experience": [{
+        "position": "posición",
+        "company": "companía",
+        "url": "#",
+        "img": "https://i.imgur.com/UGGPnkl.png",
+        "mode": "modo",
+        "start": "inicio",
+        "end": "final",
+        "timeElapsed": "tiempo"
+    }],
+    "education": [{
+        "school": "Escuela Secundaria Técnica 17",
+        "url": "https://tec17ba.edu.ar",
+        "title": "Tecnicatura",
+        "img": "https://i.imgur.com/4uCoTxI.png",
+        "career": "Electromecánica",
+        "start": "2015",
+        "end": "2022"
+    }],
+    "skills": [{
+        "skill": "skill",
+        "value": "width:70%"
+    },{
+        "skill": "skill 2",
+        "value": "width:30%"
+    }]
+}

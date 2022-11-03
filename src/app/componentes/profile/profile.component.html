@@ -1,0 +1,21 @@
+<div id="first-card" class="card mat-card">
+    <div id="profile-background">
+        <img id="profile-background-img" [src]="miPortfolio.backImage">
+    </div>
+    <div id="info">
+        <div id="info-img">
+            <img class="profile-image" [src]="miPortfolio.image">
+            <div class="btn-edit-img"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+        </div>
+        <div id="info-data">
+            <div>
+                <h1>{{miPortfolio.name}}</h1>
+                <div id="info-company">{{miPortfolio.position}}</div>
+                <div id="info-contact">
+                    <span>{{miPortfolio.ubication}} </span>
+                    <span><a href="#">Informacion de contacto</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
